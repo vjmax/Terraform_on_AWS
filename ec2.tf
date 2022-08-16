@@ -36,7 +36,7 @@ resource "aws_instance" "ec2demo" {
   ami           = "ami-07eaf27c7c4a884cf" # Ubuntu 18.04 in ap-south-1.
   instance_type = "t2.micro"
   key_name      = "newvj"
-  vpc_security_group_ids = [aws_security_group.web-sg.id]
+  vpc_security_group_ids = [aws_security_group.web-ssg.id]
   count = 2
 }
 
