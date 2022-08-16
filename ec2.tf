@@ -37,6 +37,6 @@ resource "aws_instance" "ec2demo" {
   instance_type = "t2.micro"
   key_name      = "newvj"
   vpc_security_group_ids = [aws_security_group.web-ssg.id]
-  count = 2
+  count = 1
 }
 
