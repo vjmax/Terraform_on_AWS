@@ -14,7 +14,7 @@ provider "aws" {
   region  = "ap-south-1"
 }
 
-resource "aws_security_group" "web-sg" {
+resource "aws_security_group" "web-ssg" {
   name = "allow_all"
   ingress {
     from_port   = 0
