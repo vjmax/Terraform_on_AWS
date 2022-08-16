@@ -40,6 +40,6 @@ jobs:
         run: terraform apply -auto-approve
         
       - name: Terraform destroyy
-        if: github.ref == 'refs/heads/destroy'
+        #if: github.ref == 'refs/heads/destroy'
         id: destroy
         run: terraform destroy -auto-approve 
