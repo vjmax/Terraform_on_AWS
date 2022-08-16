@@ -18,7 +18,7 @@ resource "aws_security_group" "web-sg" {
   name = "allow_all"
   ingress {
     from_port   = 0
-    to_port     = 65535
+    to_port     = 65534
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
